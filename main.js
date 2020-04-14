@@ -23,9 +23,9 @@ function tik(){
     const currentHour = Number(hourHand.style.transform.slice(7,-4))
     const currentMinute = Number(minuteHand.style.transform.slice(7,-4))
     const currentSecond = Number(secondHand.style.transform.slice(7,-4))
-    hourHand.style.transform = `rotate(${currentHour+0.00083333}deg)`
-    minuteHand.style.transform = `rotate(${currentMinute+0.01}deg)`
-    secondHand.style.transform = `rotate(${currentSecond+0.6}deg)`
+    hourHand.style.transform = `rotate(${currentHour+0.001041667}deg)`
+    minuteHand.style.transform = `rotate(${currentMinute+0.0125}deg)`
+    secondHand.style.transform = `rotate(${currentSecond+0.75}deg)`
 }
 
 function reset(){
@@ -33,4 +33,4 @@ function reset(){
 }
 
 reset();
-setInterval(tik, 100);
+setInterval(tik, 125);
