@@ -34,3 +34,4 @@ function reset(){
 
 reset();
 setInterval(tik, 125);
+setInterval(reset, 60000);
